@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #e0f7fa; /* Light Blue Background */
+  }
+  
+  .calculator {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #00796b; /* Dark Green Border */
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ffffff; /* White Background */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .display {
+    width: 100%;
+    height: 50px;
+    font-size: 2rem;
+    text-align: right; /* Align text to the right */
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #00796b; /* Dark Green Display Background */
+    color: white;
+    border: 1px solid #004d40;
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensure padding doesn't affect the width */
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+  .btn {
+    font-size: 1.5rem;
+    padding: 20px;
+    background-color: #80cbc4; /* Light Green Buttons */
+    border: 1px solid #004d40;
+    border-radius: 5px;
+    color: #004d40;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+  }
+  
+  .btn:hover {
+    background-color: #004d40; /* Dark Green Hover */
+    color: white;
+  }
+  
+  .btn:active {
+    background-color: #00796b; /* Darker Green on Active */
+    transform: scale(0.98);
+  }
+  
+  .btn.operator {
+    background-color: #ff7043; /* Orange Color for Operators */
+    color: white;
+  }
+  
+  .btn.operator:hover {
+    background-color: #f4511e; /* Darker Orange Hover */
+  }
+  
+  .btn.clear {
+    background-color: #f44336; /* Red Color for Clear Button */
+    color: white;
+  }
+  
+  .btn.clear:hover {
+    background-color: #d32f2f; /* Darker Red Hover */
+  }
+  
+  .btn.equal {
+    background-color: #4caf50; /* Green Color for Equals Button */
+    color: white;
+  }
+  
+  .btn.equal:hover {
+    background-color: #388e3c; /* Darker Green Hover */
+  }
+  
